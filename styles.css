@@ -1,2 +1,80 @@
 
 /* Your CSS Code here. */
+/* Your CSS Code here. */
+
+/* Your CSS Code here. */
+/* Styles for the video player */
+.wrapper {
+    max-width: 750px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .player__video {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+  }
+  
+  .player__controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .progress {
+    width: 100%;
+    height: 4px;
+    margin: 0 10px;
+    flex-grow: 1;
+    position: relative;
+    background-color: rgba(255,255,255,0.1);
+    cursor: pointer;
+  }
+  
+  .progress__filled {
+    height: 100%;
+    background-color: #ffc600;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .player__slider {
+    width: 50px;
+    margin: 0 10px;
+  }
+  
+  .player__button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .player__button:hover {
+    transform: scale(1.1);
+  }
+  
+  .player__button:focus {
+    outline: none;
+  }
+  
+  .toggle {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 1;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    padding: 0;
+    background-color: rgba(0,0,0,0.1);
+  }
+  
